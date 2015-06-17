@@ -16,7 +16,7 @@ sy = PVPositioner('XF:23ID1-ES{Dif-Ax:SY}Pos-SP',
                   name='sy')
 
 sz = PVPositioner('XF:23ID1-ES{Dif-Ax:SZ}Pos-SP',
-                  readback='XF:23ID1-ES{Dif-Ax:SZ}Pos-SP',
+                  readback='XF:23ID1-ES{Dif-Ax:SZ}Pos-RB',
                   stop='XF:23ID1-ES{Dif-Cryo}Cmd:Stop-Cmd',
                   stop_val=1, put_complete=True,
                   name='sz')
@@ -33,6 +33,11 @@ nptz = EpicsMotor('XF:23ID1-ES{Dif:Lens-Ax:TopZ}Mtr', name='nptz')
 npbx = EpicsMotor('XF:23ID1-ES{Dif:Lens-Ax:BtmX}Mtr', name='npbx')
 npby = EpicsMotor('XF:23ID1-ES{Dif:Lens-Ax:BtmY}Mtr', name='npby')
 npbz = EpicsMotor('XF:23ID1-ES{Dif:Lens-Ax:BtmZ}Mtr', name='npbz')
+
+# Diagnostic Axis
+
+es_diag1_y = EpicsMotor('XF:23ID1-ES{Diag:1-Ax:Y}Mtr', name='es_diag1_y')
+eta = EpicsMotor('XF:23ID1-ES{Diag:1-Ax:Eta}Mtr', name='eta')
 
 # Lakeshore 336 Temp Controller
 

@@ -1,3 +1,6 @@
+# this is just a sip thing!
+import dataportal
+
 # Configuration file for ipython.
 
 c = get_config()
